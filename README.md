@@ -15,12 +15,12 @@ Grow Mart is a web application designed to bridge the gap between farmers and bu
 - Backend: [Node.js, Express]  
 - Database: [MongoDB]  
 
-## Installation  
-1. Clone the repository:
+# Installation  
+## Clone the repository:
     git clone git@github.com:gauravraj347/growmart.git
-2. Navigate to the project directory:
+## Navigate to the project directory:
    cd frontend / cd backend
-3. Install dependencies:
+## Install dependencies:
    npm install
-4. Start the development server
+## Start the development server
   npm run dev  
