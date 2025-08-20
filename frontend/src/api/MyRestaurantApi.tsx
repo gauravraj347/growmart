@@ -19,7 +19,7 @@ export const useGetMyRestaurant = () => {
     });
 
     if (!response.ok) {
-      throw new Error("Failed");
+      throw new Error("Failed to get restaurant");
     }
     return response.json();
   };
@@ -49,7 +49,7 @@ export const useCreateMyRestaurant = () => {
     });
 
     if (!response.ok) {
-      throw new Error("Failed");
+      throw new Error("Failed to create restaurant");
     }
 
     return response.json();
@@ -63,11 +63,11 @@ export const useCreateMyRestaurant = () => {
   } = useMutation(createMyRestaurantRequest);
 
   if (isSuccess) {
-    toast.success("Created Successfully!");
+    toast.success("Restaurant created!");
   }
 
   if (error) {
-    toast.error("Unable to update");
+    toast.error("Unable to update restaurant");
   }
 
   return { createRestaurant, isLoading };
@@ -90,7 +90,7 @@ export const useUpdateMyRestaurant = () => {
     });
 
     if (!response) {
-      throw new Error("Failed to update");
+      throw new Error("Failed to update restaurant");
     }
 
     return response.json();
@@ -104,11 +104,11 @@ export const useUpdateMyRestaurant = () => {
   } = useMutation(updateRestaurantRequest);
 
   if (isSuccess) {
-    toast.success("Updated");
+    toast.success("Restaurant Updated");
   }
 
   if (error) {
-    toast.error("Unable to update");
+    toast.error("Unable to update restaurant");
   }
 
   return { updateRestaurant, isLoading };

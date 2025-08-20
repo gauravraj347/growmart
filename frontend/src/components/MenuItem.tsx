@@ -1,6 +1,10 @@
-//import { MenuItem } from "../types";
-import { Props } from "./Props";
+import { MenuItem } from "../types";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+
+type Props = {
+  menuItem: MenuItem;
+  addToCart: () => void;
+};
 
 const MenuItem = ({ menuItem, addToCart }: Props) => {
   return (

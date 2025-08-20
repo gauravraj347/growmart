@@ -1,4 +1,4 @@
-import hero from "../assets/hero.jpg";
+import hero from "../assets/hero.png";
 
 const Hero = () => {
   return (
@@ -9,5 +9,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-

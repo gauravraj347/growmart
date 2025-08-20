@@ -21,7 +21,6 @@ const AppRoutes = () => {
         }
       />
       <Route path="/auth-callback" element={<AuthCallbackPage />} />
-
       <Route
         path="/search/:city"
         element={
@@ -39,7 +38,7 @@ const AppRoutes = () => {
         }
       />
       <Route element={<ProtectedRoute />}>
-      <Route
+        <Route
           path="/order-status"
           element={
             <Layout>
@@ -55,7 +54,7 @@ const AppRoutes = () => {
             </Layout>
           }
         />
-         <Route
+        <Route
           path="/manage-restaurant"
           element={
             <Layout>

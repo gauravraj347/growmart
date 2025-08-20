@@ -30,7 +30,7 @@ const MenuItemInput = ({ index, removeMenuItem }: Props) => {
             <FormControl>
               <Input
                 {...field}
-                placeholder="Items"
+                placeholder="Cheese Pizza"
                 className="bg-white"
               />
             </FormControl>
