@@ -18,7 +18,7 @@ const HomePage = () => {
         <h1 className="text-5xl font-bold tracking-tight text-orange-600">
           Tuck into a takeway today
         </h1>
-        <span className="text-xl">Food is just a click away!</span>
+        <span className="text-xl">Order is just a click away!</span>
         <SearchBar
           placeHolder="Search by City or Town"
           onSubmit={handleSearchSubmit}
@@ -30,10 +30,7 @@ const HomePage = () => {
           <span className="font-bold text-3xl tracking-tighter">
             Order takeaway even faster!
           </span>
-          <span>
-            Download the GrowMart App for faster ordering and personalised
-            recommendations
-          </span>
+          
           <img src={appDownloadImage} />
         </div>
       </div>
